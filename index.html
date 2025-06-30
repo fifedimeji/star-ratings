@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/efe1c6d265.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <title>OKELE RATINGS</title>
+    <style>
+        .stars-outer {
+            position: relative;
+            display: inline-block;
+        }
+
+        .stars-inner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 0;
+        }
+
+        .stars-outer::before {
+            content: "\f005 \f005 \f005 \f005 \f005";
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 200;
+            color: #ccc;
+        }
+
+        .stars-inner::before {
+            content: "\f005 \f005 \f005 \f005 \f005";
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            color: goldenrod;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="form-group">
+            <select id="okele-select" class="form-control custom-select">
+                <option value="0" disabled selected>Select Okele</option>
+                <option value="amala">Amala</option>
+                <option value="semo">Semo</option>
+                <option value="eba">Eba</option>
+                <option value="wheat">Wheat</option>
+                <option value="iyan">Pounded Yam</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <input type="number" id="rating-control" class="form-control mt-3" step="0.1" min="1" max="5" placeholder="Rate 1 - 5 Stars" disabled>
+        </div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>OKELE</th>
+                    <th>RATING</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="amala">
+                    <td>Amala</td>
+                    <td>
+                        <div class="stars-outer">
+                            <div class="stars-inner"></div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </td>
+                </tr>
+                <tr class="semo">
+                    <td>Semo</td>
+                    <td>
+                        <div class="stars-outer">
+                            <div class="stars-inner"></div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </td>
+                </tr>
+                <tr class="eba">
+                    <td>Eba</td>
+                    <td>
+                        <div class="stars-outer">
+                            <div class="stars-inner"></div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </td>
+                </tr>
+                <tr class="wheat">
+                    <td>Wheat</td>
+                    <td>
+                        <div class="stars-outer">
+                            <div class="stars-inner"></div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </td>
+                </tr>
+                <tr class="iyan">
+                    <td>Pounded Yam</td>
+                    <td>
+                        <div class="stars-outer">
+                            <div class="stars-inner"></div>
+                        </div>
+                        <span class="number-rating"></span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
