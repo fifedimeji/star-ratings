@@ -1,0 +1,1 @@
+A star rating interface that takes a JS object of Nigerian morsels with some ratings and transform it into a UI with Font Awesome star icons with dynamic form to change the ratings as part of learning. 
